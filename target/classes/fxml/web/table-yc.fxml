@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+
+<TableView editable="true"
+           xmlns="http://javafx.com/javafx/10.0.2-internal"
+           xmlns:fx="http://javafx.com/fxml/1"
+           fx:id="table"
+           fx:controller="com.kehua.xml.controller.web.TableYcController">
+    <columns>
+        <TableColumn prefWidth="75.0" text="序号" fx:id="num" />
+        <TableColumn prefWidth="75.0" text="功能码(*)" fx:id="funCode" />
+        <TableColumn prefWidth="75.0" text="地址(*)" fx:id="addr" />
+        <TableColumn prefWidth="75.0" text="点位描述(*)" fx:id="remark" />
+        <TableColumn prefWidth="75.0" text="寄存器类型(*)" fx:id="regType" />
+        <TableColumn prefWidth="75.0" text="寄存器参数" fx:id="regParam" />
+        <TableColumn prefWidth="75.0" text="大小端(*)" fx:id="endian" />
+        <TableColumn prefWidth="75.0" text="偏移值(*)" fx:id="offset" />
+<!--        <TableColumn prefWidth="75.0" text="属性名称(*)" fx:id="property" />-->
+        <TableColumn prefWidth="75.0" text="倍率(*)" fx:id="ratio" />
+        <TableColumn prefWidth="75.0" text="单位" fx:id="unit" />
+        <TableColumn prefWidth="75.0" text="子设备序号(*)" fx:id="levelNo" />
+        <TableColumn prefWidth="75.0" text="子设备类型编码(*)" fx:id="levelType" />
+        <TableColumn prefWidth="75.0" text="自定义1" fx:id="userDefined1" />
+        <TableColumn prefWidth="75.0" text="自定义2" fx:id="userDefined2" />
+        <TableColumn prefWidth="75.0" text="按需获取" fx:id="oneTime"/>
+    </columns>
+</TableView>

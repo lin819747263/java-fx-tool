@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            prefHeight="400.0" prefWidth="600.0"
+            fx:controller="com.kehua.xml.controller.web.DebugLogController">
+    <center>
+        <TextArea editable="false" fx:id="log">
+
+        </TextArea>
+    </center>
+    <bottom>
+        <ToolBar>
+            <Button text="打开日志文件" onMouseClicked="#openLog"/>
+            <Button text="清除" onMouseClicked="#clearLog"/>
+            <Button onMouseClicked="#customerCommandSend" text="自定义命令发送" />
+        </ToolBar>
+    </bottom>
+</BorderPane>

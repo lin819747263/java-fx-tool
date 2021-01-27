@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kehua.xml.controller.SystemSettingController">
+
+    <center>
+        <GridPane>
+            <Label text="工作目录" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                <GridPane.margin>
+                    <Insets left="30.0" top="50.0" />
+                </GridPane.margin></Label>
+            <TextField fx:id="dir" editable="false" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                <GridPane.margin>
+                    <Insets left="20.0" top="50.0" />
+                </GridPane.margin></TextField>
+            <Button onAction="#chooseDir" text="选择文件" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                <GridPane.margin>
+                    <Insets left="5.0" top="50.0" />
+                </GridPane.margin></Button>
+            <Label text="备份时间间隔" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                <GridPane.margin>
+                    <Insets left="30.0" top="20.0" />
+                </GridPane.margin></Label>
+            <TextField fx:id="backupInterval" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                <GridPane.margin>
+                    <Insets left="20.0" top="20.0" />
+                </GridPane.margin></TextField>
+            <Label text="单位: 秒" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                <GridPane.margin>
+                    <Insets left="5.0" top="20.0" />
+                </GridPane.margin></Label>
+
+            <Label text="查询指令生成最大间隔寄存器" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                <GridPane.margin>
+                    <Insets left="30.0" top="20.0" />
+                </GridPane.margin></Label>
+            <TextField fx:id="regNum" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                <GridPane.margin>
+                    <Insets left="20.0" top="20.0" />
+                </GridPane.margin></TextField>
+
+            <Label text="单条查询指令最大寄存器数" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                <GridPane.margin>
+                    <Insets left="30.0" top="20.0" />
+                </GridPane.margin></Label>
+            <TextField fx:id="maxRegNum" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                <GridPane.margin>
+                    <Insets left="20.0" top="20.0" />
+                </GridPane.margin></TextField>
+
+            <columnConstraints>
+                <ColumnConstraints />
+                <ColumnConstraints />
+                <ColumnConstraints />
+                <ColumnConstraints />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            </rowConstraints>
+        </GridPane>
+    </center>
+
+    <bottom>
+        <ToolBar nodeOrientation="RIGHT_TO_LEFT">
+            <Button text="保存" onAction="#save"/>
+        </ToolBar>
+    </bottom>
+
+
+</BorderPane>

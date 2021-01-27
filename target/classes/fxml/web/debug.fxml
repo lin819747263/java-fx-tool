@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<BorderPane prefHeight="400.0" prefWidth="600.0"
+            stylesheets="/css/debug.css"
+            xmlns="http://javafx.com/javafx/10.0.2-internal"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:id="debugPane"
+            fx:controller="com.kehua.xml.controller.web.DebugController"
+>
+    <top>
+        <HBox>
+            <Label text="设备调试" prefWidth="150" prefHeight="50" alignment="BASELINE_CENTER" onMouseClicked="#debugDevice"/>
+            <Label text="遥控调试" prefWidth="150" prefHeight="50" alignment="BASELINE_CENTER" onMouseClicked="#debugYk"/>
+            <Label text="日志" prefWidth="150" prefHeight="50" alignment="BASELINE_CENTER" onMouseClicked="#debugLog"/>
+        </HBox>
+    </top>
+    <center>
+    </center>
+</BorderPane>

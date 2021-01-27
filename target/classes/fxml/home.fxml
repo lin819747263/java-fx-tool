@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<GridPane prefHeight="200.0"
+          prefWidth="400.0"
+          xmlns="http://javafx.com/javafx/10.0.2-internal"
+          xmlns:fx="http://javafx.com/fxml/1"
+          stylesheets="/css/home.css"
+          fx:controller="com.kehua.xml.controller.HomeController">
+   <columnConstraints>
+      <ColumnConstraints/>
+      <ColumnConstraints/>
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints/>
+      <RowConstraints/>
+   </rowConstraints>
+   <Label text="Web 模式" fx:id="web" prefWidth="200" alignment="CENTER" prefHeight="200"/>
+   <Label text="APP 模式" fx:id="app" GridPane.columnIndex="1" GridPane.rowIndex="0" prefWidth="200" prefHeight="200"
+          alignment="CENTER"/>
+</GridPane>

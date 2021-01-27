@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane
+        fx:id="tablePane" prefHeight="600.0" prefWidth="800.0"
+        xmlns="http://javafx.com/javafx/10.0.2-internal"
+        xmlns:fx="http://javafx.com/fxml/1"
+        fx:controller="com.kehua.xml.controller.web.MainController"
+        stylesheets="/css/sample.css"
+>
+   <top>
+      <BorderPane fx:id="homePane" prefHeight="50.0" prefWidth="300.0">
+         <top>
+            <MenuBar>
+               <Menu text="文件">
+                  <MenuItem onAction="#newTemplate" text="新建" />
+                  <MenuItem onAction="#open" text="打开" />
+                  <Menu text="恢复" fx:id="menuRecovery" onAction="#menuRecovery"/>
+                  <SeparatorMenuItem />
+                  <MenuItem onAction="#save" text="保存(Ctrl + S)" />
+                  <MenuItem onAction="#saveAs" text="另存为" />
+                  <MenuItem onAction="#exportZip" text="导出" />
+                  <SeparatorMenuItem />
+                  <MenuItem onAction="#exportI18n" text="导出翻译" />
+                  <MenuItem onAction="#importI18n" text="导入翻译" />
+                  <MenuItem onAction="#extractI18n" text="提取翻译" />
+                  <MenuItem onAction="#convertTemplate" text="协议转换" />
+                   <MenuItem onAction="#importEvent" text="事件导入" />
+                   <MenuItem onAction="#importStore" text="存储导入" />
+               </Menu>
+               <Menu text="工具">
+                  <MenuItem onAction="#check" text="协议校验" />
+                  <MenuItem onAction="#deviceDebug" text="设备调试" />
+                  <MenuItem onAction="#createBlocks" text="生成查询指令" />
+                  <MenuItem onAction="#extractSetting" text="配置提取" />
+               </Menu>
+               <Menu text="设置">
+                  <MenuItem onAction="#dict" text="字典管理" />
+                  <MenuItem onAction="#setting" text="系统设置" />
+               </Menu>
+               <Menu text="帮助">
+                   <MenuItem text="如何配置" onAction="#openSetting"/>
+                  <MenuItem text="软件手册" onAction="#openGuide"/>
+                  <MenuItem text="网站" onAction="#openWeb"/>
+               </Menu>
+            </MenuBar>
+         </top>
+         <bottom>
+            <ToolBar>
+               <Button onAction="#newTemplate" text="新建" />
+               <Button onAction="#open" text="打开" />
+               <Button onAction="#save" text="保存" />
+               <Button onAction="#saveAs" text="另存为" />
+               <Button onAction="#exportZip" text="导出" />
+               <Button onAction="#deviceDebug" text="设备调试" />
+               <Button onAction="#extractSetting" text="配置提取" />
+               <Button onAction="#createBlocks" text="生成查询指令" />
+               <Button text="块保存" onAction="#saveBlock"/>
+               <Button text="块应用" onAction="#applyBlock"/>
+            </ToolBar>
+         </bottom>
+
+        </BorderPane>
+    </top>
+    <center>
+    </center>
+    <left>
+        <VBox prefHeight="300.0" prefWidth="120" BorderPane.alignment="CENTER" styleClass="leftMenu">
+            <HBox onMouseClicked="#leftMenuClick" id="tableDeviceView">
+                <Label text="设备"/>
+            </HBox>
+            <HBox onMouseClicked="#leftMenuClick" id="tableBlockView">
+                <Label text="查询指令"/>
+            </HBox>
+            <HBox onMouseClicked="#leftMenuClick" id="tableYxView">
+                <Label text="遥信"/>
+            </HBox>
+            <HBox onMouseClicked="#leftMenuClick" id="tableYcView">
+                <Label text="遥测"/>
+            </HBox>
+            <HBox onMouseClicked="#leftMenuClick" id="tableYkView">
+                <Label text="遥控"/>
+            </HBox>
+            <Separator/>
+            <HBox onMouseClicked="#leftMenuClick" id="tableEventView">
+                <Label text="事件"/>
+            </HBox>
+            <HBox onMouseClicked="#leftMenuClick" id="tableStoreView">
+                <Label text="存储"/>
+            </HBox>
+            <HBox onMouseClicked="#leftMenuClick" id="tableI18nView">
+                <Label fx:id="leftI18n" text="国际化"/>
+            </HBox>
+        </VBox>
+    </left>
+</BorderPane>

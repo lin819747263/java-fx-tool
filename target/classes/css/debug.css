@@ -1,0 +1,25 @@
+.debug-setting HBox {
+    -fx-alignment: center-left;
+    -fx-padding: 5px 1em;
+}
+
+.debug-setting-base {
+    -fx-alignment: center;
+}
+
+.debug-setting Label {
+    -fx-pref-width: 5em;
+}
+
+#debug-setting-button {
+    -fx-alignment: center;
+}
+
+.debug-top-active {
+    -fx-background-color: #dddddd;
+}
+
+.debug-debug HBox {
+    -fx-padding: 5px 1em;
+    -fx-alignment: center;
+}

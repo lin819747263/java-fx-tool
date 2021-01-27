@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<BorderPane fx:id="tablePane"
+            xmlns="http://javafx.com/javafx/10.0.2-internal"
+            xmlns:fx="http://javafx.com/fxml/1"
+            prefWidth="600"
+            fx:controller="com.kehua.xml.controller.DictController">
+
+   <top>
+      <ToolBar>
+         <Button fx:id="buttonSave" onAction="#save" text="保存" />
+      </ToolBar>
+   </top>
+
+   <center>
+      <TableView fx:id="table" editable="true">
+         <columns>
+            <TableColumn fx:id="num" prefWidth="75.0" text="序号" />
+            <TableColumn fx:id="key" prefWidth="75.0" text="key" />
+            <TableColumn fx:id="value" prefWidth="75.0" text="value" />
+         </columns>
+      </TableView>
+   </center>
+   <left>
+      <VBox fx:id="vbox" prefHeight="300.0" prefWidth="120" BorderPane.alignment="CENTER">
+      </VBox>
+   </left>
+</BorderPane>

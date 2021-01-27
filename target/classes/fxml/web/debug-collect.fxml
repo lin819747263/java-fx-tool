@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.control.Button?>
+<BorderPane xmlns="http://javafx.com/javafx/10.0.2-internal"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:id="borderPane"
+            fx:controller="com.kehua.xml.controller.web.DebugCollectorController">
+    <center>
+        <TableView editable="true" fx:id="table">
+            <columns>
+                <TableColumn prefWidth="75.0" text="序号" fx:id="num" />
+                <TableColumn prefWidth="75.0" text="功能码" fx:id="funCode"/>
+                <TableColumn prefWidth="75.0" text="点位地址" fx:id="addr"/>
+                <TableColumn prefWidth="75.0" text="点位名称" fx:id="remark"/>
+                <TableColumn prefWidth="75.0" text="寄存器类型" fx:id="regType"/>
+                <TableColumn prefWidth="75.0" text="寄存器参数" fx:id="regParam"/>
+                <TableColumn prefWidth="75.0" text="倍率" fx:id="ratio"/>
+                <TableColumn prefWidth="75.0" text="偏移量" fx:id="offset"/>
+                <TableColumn prefWidth="75.0" text="采集值" fx:id="collectValue"/>
+            </columns>
+        </TableView>
+    </center>
+    <bottom>
+        <ToolBar>
+            <Button text="开始采集" onAction="#collect"/>
+            <Button text="连接设置" onAction="#connectionSetting"/>
+        </ToolBar>
+    </bottom>
+</BorderPane>
+

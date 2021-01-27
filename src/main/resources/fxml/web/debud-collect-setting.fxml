@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="vBox" prefHeight="180" prefWidth="250" xmlns="http://javafx.com/javafx/10.0.2-internal"
+      stylesheets="/css/debug.css"
+      styleClass="debug-setting"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kehua.xml.controller.web.DebugCollectSettingController">
+
+    <HBox>
+        <Label text="设备地址"/>
+        <TextField fx:id="addr"/>
+    </HBox>
+
+    <HBox>
+        <Label text="连接方式"/>
+        <RadioButton fx:id="tcp" selected="true" text="TCP"/>
+        <RadioButton fx:id="serial" text="串口"/>
+    </HBox>
+
+    <VBox fx:id="settingWay"/>
+
+    <HBox id="debug-setting-button">
+        <Button fx:id="ensure" text="确认" onAction="#ensure"/>
+        <Button fx:id="cancel" text="取消" onAction="#cancel"/>
+        <Button fx:id="connect" text="连接测试" onAction="#connect"/>
+    </HBox>
+
+</VBox>

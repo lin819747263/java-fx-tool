@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+
+<TableView editable="true"
+           xmlns="http://javafx.com/javafx/10.0.2-internal"
+           xmlns:fx="http://javafx.com/fxml/1"
+           fx:id="table"
+           fx:controller="com.kehua.xml.controller.app.AppTableGroupController">
+    <columns>
+        <TableColumn prefWidth="75.0" text="序号" fx:id="num" />
+        <TableColumn prefWidth="75.0" text="Key" fx:id="key" />
+        <TableColumn prefWidth="75.0" text="分组名称" fx:id="name" />
+        <TableColumn prefWidth="75.0" text="排序" fx:id="sort" />
+    </columns>
+</TableView>

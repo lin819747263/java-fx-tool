@@ -1,0 +1,9 @@
+javafx:
+  appicons: /ico.png
+  title: XmlTool
+
+logging:
+  file:
+    name: C:/necp-xml/error.log
+  level:
+    root: info

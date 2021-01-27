@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<TableView fx:id="table"
+           editable="true"
+           xmlns="http://javafx.com/javafx/10.0.2-internal"
+           xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="com.kehua.xml.controller.web.TableBlockController">
+    <columns>
+        <TableColumn prefWidth="75.0" text="序号" fx:id="num" />
+        <TableColumn prefWidth="75.0" text="功能码" fx:id="funcode"/>
+        <TableColumn prefWidth="75.0" text="地址" fx:id="addr"/>
+        <TableColumn prefWidth="75.0" text="寄存器个数" fx:id="regCount"/>
+        <TableColumn prefWidth="75.0" text="查询类型" fx:id="queryType"/>
+        <TableColumn prefWidth="75.0" text="锁定" fx:id="isLocked"/>
+    </columns>
+</TableView>

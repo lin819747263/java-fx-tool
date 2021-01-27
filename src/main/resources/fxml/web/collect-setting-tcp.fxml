@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal"
+          stylesheets="/css/debug.css"
+          xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kehua.xml.controller.web.CollectSettingTcpController">
+
+    <HBox>
+        <Label text="主机地址"/>
+        <TextField fx:id="host"/>
+    </HBox>
+    <HBox>
+        <Label text="端口"/>
+        <TextField fx:id="port"/>
+    </HBox>
+
+</VBox>

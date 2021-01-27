@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+
+<TableView editable="true"
+           xmlns="http://javafx.com/javafx/10.0.2-internal"
+           xmlns:fx="http://javafx.com/fxml/1"
+           fx:id="table"
+           fx:controller="com.kehua.xml.controller.web.TableStoreController">
+    <columns>
+        <TableColumn prefWidth="75.0" text="序号" fx:id="num" />
+        <TableColumn prefWidth="75.0" text="点位名称" fx:id="remark" />
+        <TableColumn prefWidth="75.0" text="存储周期" fx:id="storeTime" />
+    </columns>
+</TableView>

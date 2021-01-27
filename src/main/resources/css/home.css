@@ -1,0 +1,9 @@
+#web:hover {
+    -fx-background-color: #dddddd;
+    -fx-cursor: hand;
+}
+
+#app:hover {
+    -fx-background-color: #dddddd;
+    -fx-cursor: hand;
+}

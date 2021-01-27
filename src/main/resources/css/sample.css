@@ -1,0 +1,31 @@
+.leftMenu HBox{
+    -fx-padding: 5px 15px;
+}
+.leftMenu HBox:hover{
+    -fx-background-color: #dddddd;
+    -fx-cursor: hand;
+}
+.leftMenu HBox.active{
+    -fx-background-color: #dddddd;
+    -fx-border-color: #00aeff;
+    -fx-border-style: solid;
+    -fx-border-width: 1px;
+}
+
+.user-defined-1-dialog-label{
+    -fx-padding: 10px 3px 10px 3px;
+}
+.user-defined-1-dialog-label:hover{
+    -fx-cursor: hand;
+    -fx-background-color: #dddddd;
+}
+
+.extract-i18n-conflict Label{
+    -fx-padding: 5px;
+}
+
+.extract-i18n-conflict-item{
+    -fx-border-width: 1px, 0, 0, 0;
+    -fx-border-style: solid;
+    -fx-border-color: #00aeff;
+}

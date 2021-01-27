@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane
+        fx:id="tablePane" prefHeight="600.0" prefWidth="800.0"
+        xmlns="http://javafx.com/javafx/10.0.2-internal"
+        xmlns:fx="http://javafx.com/fxml/1"
+        fx:controller="com.kehua.xml.controller.app.AppMainController"
+        stylesheets="@/css/sample.css"
+>
+   <top>
+      <BorderPane prefHeight="50.0" prefWidth="300.0">
+         <top>
+            <MenuBar>
+               <Menu text="文件">
+                  <MenuItem  onAction="#open" text="打开" />
+                  <Menu text="恢复" fx:id="menuRecovery" onAction="#menuRecovery"/>
+                  <SeparatorMenuItem />
+                  <MenuItem onAction="#save" text="保存(Ctrl + S)" />
+                  <MenuItem onAction="#saveAs" text="另存为" />
+                  <MenuItem onAction="#exportZip" text="导出" />
+                   <MenuItem onAction="#exportI18n" text="导出翻译" />
+                   <MenuItem onAction="#importI18n" text="导入翻译" />
+               </Menu>
+               <Menu text="工具">
+                  <MenuItem onAction="#createBlocks" text="生成查询指令" />
+               </Menu>
+               <Menu text="设置">
+                  <MenuItem onAction="#dict" text="字典管理" />
+                  <MenuItem onAction="#setting" text="系统设置" />
+               </Menu>
+               <Menu text="帮助">
+                   <MenuItem text="如何配置" onAction="#openSetting"/>
+                  <MenuItem text="软件手册" onAction="#openGuide"/>
+                  <MenuItem text="网站" onAction="#openWeb"/>
+               </Menu>
+            </MenuBar>
+         </top>
+         <bottom>
+            <ToolBar>
+               <Button onAction="#open" text="打开" />
+               <Button onAction="#save" text="保存" />
+               <Button onAction="#saveAs" text="另存为" />
+               <Button onAction="#exportZip" text="导出" />
+               <Button onAction="#createBlocks" text="生成查询指令" />
+               <Button onAction="#extractI18n" text="提取翻译" />
+               <Button text="块保存" onAction="#saveBlock"/>
+               <Button text="块应用" onAction="#applyBlock"/>
+            </ToolBar>
+         </bottom>
+
+        </BorderPane>
+    </top>
+    <center>
+    </center>
+    <left>
+        <VBox prefHeight="300.0" prefWidth="120" BorderPane.alignment="CENTER" styleClass="leftMenu">
+            <HBox onMouseClicked="#leftMenuClick" id="tableDeviceView">
+                <Label text="设备"/>
+            </HBox>
+            <HBox onMouseClicked="#leftMenuClick" id="tableBlockView">
+                <Label text="查询指令"/>
+            </HBox>
+            <HBox onMouseClicked="#leftMenuClick" id="tableYxView">
+                <Label text="遥信"/>
+            </HBox>
+            <HBox onMouseClicked="#leftMenuClick" id="tableYcView">
+                <Label text="遥测"/>
+            </HBox>
+            <HBox onMouseClicked="#leftMenuClick" id="tableYkView">
+                <Label text="遥控"/>
+            </HBox>
+            <HBox onMouseClicked="#leftMenuClick" id="tableGroupView">
+                <Label text="分组"/>
+            </HBox>
+            <HBox onMouseClicked="#leftMenuClick" id="tableRecordView">
+                <Label text="记录"/>
+            </HBox>
+            <Separator/>
+            <HBox onMouseClicked="#leftMenuClick" id="tableI18nView">
+                <Label text="国际化"/>
+            </HBox>
+        </VBox>
+    </left>
+</BorderPane>
